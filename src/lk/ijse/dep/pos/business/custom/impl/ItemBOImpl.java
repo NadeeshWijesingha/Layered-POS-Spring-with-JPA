@@ -7,12 +7,14 @@ import lk.ijse.dep.pos.dao.custom.ItemDAO;
 import lk.ijse.dep.pos.db.JPAUtil;
 import lk.ijse.dep.pos.entity.Item;
 import lk.ijse.dep.pos.util.ItemTM;
+import org.springframework.stereotype.Component;
 
 import javax.persistence.EntityManager;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
+@Component
 public class ItemBOImpl implements ItemBO {
 
 
