@@ -13,6 +13,7 @@ import lk.ijse.dep.pos.entity.Order;
 import lk.ijse.dep.pos.entity.OrderDetail;
 import lk.ijse.dep.pos.util.OrderDetailTM;
 import lk.ijse.dep.pos.util.OrderTM;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import javax.persistence.EntityManager;
@@ -23,10 +24,14 @@ import java.util.List;
 @Component
 public class OrderBOImpl implements OrderBO {
 
-    private final OrderDAO orderDAO = DAOFactory.getInstance().getDAO(DAOType.ORDER);
-    private final OrderDetailDAO orderDetailDAO = DAOFactory.getInstance().getDAO(DAOType.ORDER_DETAIL);
-    private final ItemDAO itemDAO = DAOFactory.getInstance().getDAO(DAOType.ITEM);
-    private final CustomerDAO customerDAO = DAOFactory.getInstance().getDAO(DAOType.CUSTOMER);
+    @Autowired
+    private OrderDAO orderDAO;
+    @Autowired
+    private OrderDetailDAO orderDetailDAO;
+    @Autowired
+    private ItemDAO itemDAO;
+    @Autowired
+    private CustomerDAO customerDAO;
 
     public String getNewOrderId() throws Exception {
 
