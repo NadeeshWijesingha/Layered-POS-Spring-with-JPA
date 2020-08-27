@@ -1,7 +1,9 @@
 package lk.ijse.dep.pos.controller;
 
+import lk.ijse.dep.pos.AppInitializer;
 import lk.ijse.dep.pos.business.BOFactory;
 import lk.ijse.dep.pos.business.BOType;
+import lk.ijse.dep.pos.business.custom.CustomerBO;
 import lk.ijse.dep.pos.business.custom.ItemBO;
 import com.jfoenix.controls.JFXTextField;
 import javafx.beans.value.ChangeListener;
@@ -43,7 +45,7 @@ public class ManageItemFormController implements Initializable {
     @FXML
     private AnchorPane root;
 
-    private final ItemBO itemBO = BOFactory.getInstance().getBO(BOType.ITEM);
+    private ItemBO itemBO = AppInitializer.getApplicationContext().getBean(ItemBO.class);
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
