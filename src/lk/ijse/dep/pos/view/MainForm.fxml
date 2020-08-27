@@ -10,7 +10,7 @@
    <children>
       <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="200.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../lk/ijse/dep/pos/asset/ijse-logo.gif" />
+            <Image url="@../asset/ijse-logo.gif" />
          </image>
       </ImageView>
       <Label layoutX="178.0" layoutY="76.0" text="FX Point of Sale System - JDBC">
@@ -20,7 +20,7 @@
       </Label>
       <ImageView fx:id="imgCustomer" fitHeight="80.0" fitWidth="80.0" layoutX="57.0" layoutY="165.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../lk/ijse/dep/pos/asset/customers.png" />
+            <Image url="@../asset/customers.png" />
          </image>
          <cursor>
             <Cursor fx:constant="HAND" />
@@ -28,7 +28,7 @@
       </ImageView>
       <ImageView fx:id="imgItem" fitHeight="80.0" fitWidth="80.0" layoutX="189.0" layoutY="165.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../lk/ijse/dep/pos/asset/items.png" />
+            <Image url="@../asset/items.png" />
          </image>
          <cursor>
             <Cursor fx:constant="HAND" />
@@ -36,7 +36,7 @@
       </ImageView>
       <ImageView fx:id="imgOrder" fitHeight="80.0" fitWidth="80.0" layoutX="324.0" layoutY="165.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../lk/ijse/dep/pos/asset/orders.png" />
+            <Image url="@../asset/orders.png" />
          </image>
          <cursor>
             <Cursor fx:constant="HAND" />
@@ -44,7 +44,7 @@
       </ImageView>
       <ImageView fx:id="imgViewOrders" fitHeight="80.0" fitWidth="80.0" layoutX="456.0" layoutY="165.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../lk/ijse/dep/pos/asset/report.png" />
+            <Image url="@../asset/report.png" />
          </image>
          <cursor>
             <Cursor fx:constant="HAND" />
